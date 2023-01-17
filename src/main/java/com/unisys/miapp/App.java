@@ -19,10 +19,10 @@ public class App {
 
 
         System.out.println("Bucle For hasta 10");
-        int z = 0;
-        for (z = 0; z < 10;z++){
+        int z;
+        for (z = 0; z < 10;z++)
             System.out.println(z);
-        }
+
 
         int edadPersona=21;
                 if (edadPersona<18){
@@ -42,7 +42,19 @@ public class App {
                 System.out.println("Su edad es:" + edadPersona);
                 break;
         }
+
+        i=0;
+        System.out.println("Entrada al bucle while");
+        while(i<10) {
+            i++;
+            switch (i) {
+                case 2:
+                    continue;
+                case 5:
+                    break;
+            }
+        }
     }
-
-
 }
+
+
